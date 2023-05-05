@@ -41,6 +41,7 @@ cpu.cfu0 SimulationFilePathLinux @""" + cfu_lib_filepath + """
 """
 
     result += """
+cpu EnableProfiler Perfetto @/home/karthikeyan/bachelor_thesis/t true
 sysbus LoadELF $ORIGIN/../software.elf
 """
     return result
