@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue May  9 10:30:17 2023
+# Process ID: 85912
+# Current directory: /home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware
+# Command line: vivado -mode batch -source xilinx_kc705.tcl
+# Log file: /home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware/vivado.log
+# Journal file: /home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware/vivado.jou
+# Running On: pop-os, OS: Linux, CPU Frequency: 3323.953 MHz, CPU Physical cores: 16, Host memory: 16083 MB
+#-----------------------------------------------------------
+source xilinx_kc705.tcl
+# create_project -force -name xilinx_kc705 -part xc7k325t-ffg900-2
+# set_msg_config -id {Common 17-55} -new_severity {Warning}
+# read_verilog {/home/karthikeyan/bachelor_thesis/pro/proj/proj_template_v/cfu.v}
+# read_verilog {/home/karthikeyan/bachelor_thesis/pro/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/VexRiscv_FullCfu.v}
+# read_verilog {/home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware/xilinx_kc705.v}
+# read_xdc xilinx_kc705.xdc
+# set_property PROCESSING_ORDER EARLY [get_files xilinx_kc705.xdc]
+# synth_design -directive default -top xilinx_kc705 -part xc7k325t-ffg900-2
+Command: synth_design -directive default -top xilinx_kc705 -part xc7k325t-ffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+WARNING: [Common 17-348] Failed to get the license for feature 'Synthesis' and/or device 'xc7k325t'. Explanation: Cannot connect to a license server running the xilinxd licensing daemon at the specified port.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+0 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-345] A valid license was not found for feature 'Synthesis' and/or device 'xc7k325t'. Please run the Vivado License Manager for assistance in determining
+which features and devices are licensed for your system.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". If you are using a license server, verify that the license server is up and running a version of the xilinx daemon that is compatible with the version of Xilinx software that you are using. Note: Vivado 2021.1 and later versions require upgrading your license server tools to the Flex 11.17.2.0 versions. Please confirm with your license admin that the correct version of the license server tools are installed.
+INFO: [Common 17-206] Exiting Vivado at Tue May  9 10:31:44 2023...

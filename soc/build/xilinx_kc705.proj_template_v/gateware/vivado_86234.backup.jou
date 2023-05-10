@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue May  9 10:38:25 2023
+# Process ID: 86234
+# Current directory: /home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware
+# Command line: vivado -mode batch -source xilinx_kc705.tcl
+# Log file: /home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware/vivado.log
+# Journal file: /home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware/vivado.jou
+# Running On: pop-os, OS: Linux, CPU Frequency: 3491.959 MHz, CPU Physical cores: 16, Host memory: 16083 MB
+#-----------------------------------------------------------
+source xilinx_kc705.tcl

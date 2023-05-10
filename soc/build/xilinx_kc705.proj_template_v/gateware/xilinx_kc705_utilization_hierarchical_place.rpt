@@ -1,0 +1,35 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date         : Tue May  9 10:42:38 2023
+| Host         : pop-os running 64-bit Pop!_OS 22.04 LTS
+| Command      : report_utilization -hierarchical -file xilinx_kc705_utilization_hierarchical_place.rpt
+| Design       : xilinx_kc705
+| Device       : xc7k325tffg900-2
+| Speed File   : -2
+| Design State : Fully Placed
+--------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------------+------------------+------------+------------+---------+------+------+--------+--------+------------+
+|          Instance          |      Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++----------------------------+------------------+------------+------------+---------+------+------+--------+--------+------------+
+| xilinx_kc705               |            (top) |       7762 |       7616 |     144 |    2 | 6350 |     19 |     73 |          8 |
+|   (xilinx_kc705)           |            (top) |       4823 |       4677 |     144 |    2 | 4852 |     18 |     65 |          0 |
+|   Cfu                      |              Cfu |         92 |         92 |       0 |    0 |   33 |      0 |      0 |          4 |
+|   VexRiscv                 |         VexRiscv |       2847 |       2847 |       0 |    0 | 1465 |      1 |      8 |          4 |
+|     (VexRiscv)             |         VexRiscv |       1547 |       1547 |       0 |    0 | 1302 |      0 |      2 |          4 |
+|     IBusCachedPlugin_cache | InstructionCache |        730 |        730 |       0 |    0 |   98 |      1 |      1 |          0 |
+|     dataCache_1            |        DataCache |        578 |        578 |       0 |    0 |   65 |      0 |      5 |          0 |
++----------------------------+------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
