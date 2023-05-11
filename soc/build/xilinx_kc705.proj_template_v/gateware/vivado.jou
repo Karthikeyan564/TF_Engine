@@ -2,14 +2,26 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Wed May 10 19:26:47 2023
-# Process ID: 14629
+# Start of session at: Wed May 10 23:32:18 2023
+# Process ID: 11849
 # Current directory: /home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware
 # Command line: vivado xilinx_kc705.xpr
 # Log file: /home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware/vivado.log
 # Journal file: /home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware/vivado.jou
-# Running On: pop-os, OS: Linux, CPU Frequency: 1200.000 MHz, CPU Physical cores: 16, Host memory: 16083 MB
+# Running On: pop-os, OS: Linux, CPU Frequency: 3200.000 MHz, CPU Physical cores: 16, Host memory: 16066 MB
 #-----------------------------------------------------------
 start_gui
 open_project xilinx_kc705.xpr
 update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 14
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 14
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_runs impl_1 -jobs 14
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 14
+wait_on_run impl_1
+reset_run impl_1

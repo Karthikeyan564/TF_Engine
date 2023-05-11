@@ -10,7 +10,7 @@ module Cfu (
   input               reset,
   input               clk
 );
-  localparam InputOffset = $signed(9'd128);
+  localparam InputOffset = $signed(9'd0);
 
   // SIMD multiply step:
   wire signed [15:0] prod_0, prod_1, prod_2, prod_3;

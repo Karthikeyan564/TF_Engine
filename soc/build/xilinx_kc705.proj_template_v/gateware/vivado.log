@@ -2,13 +2,13 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Wed May 10 19:26:47 2023
-# Process ID: 14629
+# Start of session at: Wed May 10 23:32:18 2023
+# Process ID: 11849
 # Current directory: /home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware
 # Command line: vivado xilinx_kc705.xpr
 # Log file: /home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware/vivado.log
 # Journal file: /home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware/vivado.jou
-# Running On: pop-os, OS: Linux, CPU Frequency: 1200.000 MHz, CPU Physical cores: 16, Host memory: 16083 MB
+# Running On: pop-os, OS: Linux, CPU Frequency: 3200.000 MHz, CPU Physical cores: 16, Host memory: 16066 MB
 #-----------------------------------------------------------
 start_gui
 open_project xilinx_kc705.xpr
@@ -24,7 +24,60 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/karthikeyan/uoftml/Vivado/2022.1/data/ip'.
-open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 7671.402 ; gain = 77.227 ; free physical = 4140 ; free virtual = 66023
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 7675.836 ; gain = 76.191 ; free physical = 4243 ; free virtual = 65565
 update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 14
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Wed May 10 23:33:39 2023] Launched synth_1...
+Run output will be captured here: /home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware/xilinx_kc705.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:01:01 . Memory (MB): peak = 7738.012 ; gain = 5.023 ; free physical = 1927 ; free virtual = 63516
+reset_run synth_1
+launch_runs synth_1 -jobs 14
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Wed May 10 23:34:53 2023] Launched synth_1...
+Run output will be captured here: /home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware/xilinx_kc705.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k325tffg900-2
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 7742.012 ; gain = 0.000 ; free physical = 2613 ; free virtual = 63299
+INFO: [Netlist 29-17] Analyzing 839 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware/xilinx_kc705.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware/xilinx_kc705.xdc:778]
+INFO: [Timing 38-2] Deriving generated clocks [/home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware/xilinx_kc705.xdc:778]
+WARNING: [Vivado 12-3521] Clock specified in more than one group: soc_crg_clkout0 [/home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware/xilinx_kc705.xdc:778]
+Finished Parsing XDC File [/home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware/xilinx_kc705.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8477.477 ; gain = 0.000 ; free physical = 2041 ; free virtual = 62747
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 111 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 64 instances
+  IOBUFDS => IOBUFDS (IBUFDS, INV, OBUFTDS(x2)): 8 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 34 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 8657.684 ; gain = 915.672 ; free physical = 1821 ; free virtual = 62538
+launch_runs impl_1 -jobs 14
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.04 . Memory (MB): peak = 8659.441 ; gain = 1.758 ; free physical = 1863 ; free virtual = 62609
+[Wed May 10 23:44:48 2023] Launched impl_1...
+Run output will be captured here: /home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware/xilinx_kc705.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 14
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.04 . Memory (MB): peak = 8659.441 ; gain = 0.000 ; free physical = 1883 ; free virtual = 62591
+[Wed May 10 23:48:06 2023] Launched impl_1...
+Run output will be captured here: /home/karthikeyan/bachelor_thesis/pro/soc/build/xilinx_kc705.proj_template_v/gateware/xilinx_kc705.runs/impl_1/runme.log
+reset_run impl_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed May 10 19:30:06 2023...
+INFO: [Common 17-206] Exiting Vivado at Wed May 10 23:49:27 2023...
